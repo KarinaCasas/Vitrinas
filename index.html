@@ -26,7 +26,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
     rel="stylesheet">
-
+<!--Fuente Rajdhani-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,7 +38,7 @@
         <h1 class="h1">ViTrinas</h1>
 
     </header>
-    <!--navegador-->
+<!-----------NAVEGADOR------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-color mt-3 mb-1">
         <div class="container-fluid conteiner-color">
             <a class="navbar-brand hover icon-home" href="./index.html"></a>
@@ -63,8 +66,17 @@
     </nav>
 <!----------------CONTENEDOR------------->
     <div class="container">
-        <div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp"></a></div>
-        <!--texto animado-->
+<!----------------REDES----------------->
+        <div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp" onclick="return salir()"></a>
+        <a href="https://www.facebook.com" class="icon-facebook" onclick="return salir()"></a>
+        <a href="https://www.instagram.com" class="icon-instagram" onclick="return salir()"></a>
+        <a href="https://twitter.com" class="icon-twitter" onclick="return salir()"></a>
+        </div>
+<!-------Desplazador hacia arriba------------>
+        <div class="icono">
+         <icon class="icon-arriba"></icon>
+        </div>
+<!--------------texto animado---------------->
         <div class="texto1">
             <ul class="textos">
                 <li class="text_animado"> Elige tu estilo </li>
@@ -75,7 +87,7 @@
 <!-----------------CONTENIDO----------------->
         
         <div class="vitrina">
-            <a href="#">
+            <a href="/Pages/estilos.html#tech">
                 <figure class="imagenes">
                     <img src="./imagenes/techwear/imagen__portada.jpg" alt="Techwear">
                     <div class="capa">
@@ -83,15 +95,15 @@
                     </div>
                 </figure>
             </a>
-            <a href="#">
+            <a href="../Pages/estilos.html#soft">
                 <figure class="imagenes">
-                    <img src="./imagenes/softgirl/softgirl_portada.jpg" alt="SoftGirl">
+                    <img src="./imagenes/Soft_girl/softgirl_portada.jpg" alt="SoftGirl">
                     <div class="capa">
                         <h2>SOFT GIRL</h2>
                     </div>
                 </figure>
             </a>
-            <a href="#">
+            <a href="../Pages/estilos.html#clasicos">
                 <figure class="imagenes">
                     <img src="./imagenes/clasico/Clasico_portada.jpg" alt="Clasico">
                     <div class="capa">
@@ -99,7 +111,7 @@
                     </div>class="a_aside"
                 </figure>
             </a>
-            <a href="#">
+            <a href="../Pages/estilos.html#academia">
                 <figure class="imagenes">
                     <img src="./imagenes/preppy/portada preppy.jpg" alt="Preppy">
                     <div class="capa">
@@ -107,7 +119,7 @@
                     </div>
                 </figure>
             </a>
-            <a href="#">
+            <a href="../Pages/estilos.html#rock">
                 <figure class="imagenes">
                     <img src="./imagenes/rock/portada_rock2.jpg" alt="Rock">
                     <div class="capa">
@@ -115,7 +127,7 @@
                     </div>
                 </figure>
             </a>
-            <a href="#">
+            <a href="/Pages/estilos.html#sporty">
                 <figure class="imagenes">
                     <img src="./imagenes/sporty/bg_sporty.jpg" alt="Gothic">
                     <div class="capa">
@@ -126,33 +138,27 @@
             </div>
 
 <!-------------------ASIDE--------------------->
+<div class="posision">
         <aside class="aside">
+            <h3 class="h3_descargables">descargables</h3>
             <div class="div_aside">
-                <a href="https://www.parati.com.ar/categoria/moda/"class="a_aside">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/E1266601_%285398889640%29.jpg" alt="Moda" class="img_aside">
-                Últimas novedades sobre moda</a>
+                <a href="../descargables/Modos de vestir e identidades de género.pdf"
+                    download="descargables/Modos de vestir e identidades de género.pdf" class="a_aside" onclick="return salir()"><img
+                        src="./imagenes/Logos/png.png" alt="archivo descargable" class="img_png">Modos de vestir e identidades de
+                    género</a>
             </div>
             <div class="div_aside">
-                <a href="https://www.clara.es/moda/looks/estilos-vestir_12818"class="a_aside">
-                <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/24/16640115248905.jpg" alt="desfile" class="img_aside">
-                10 estilos de vestir</a>
-                </div>
-
-            <div class="div_aside">
-                <a href="https://seruncaballero.com/estilos-de-vestir-hombre/"class="a_aside">
-                <img src="https://media.revistagq.com/photos/61e690ac671b6de977880738/1:1/w_1600%2Cc_limit/GettyImages-1365032685.jpg" alt="Hombre caminando" class="img_aside">
-                Guía completa para ser un experto en estilos de vestir/ropa de hombre</a>
+                <a href="../descargables/moda.pdf" download="moda.pdf" class="a_aside"><img src="./imagenes/Logos/png.png"
+                        alt="archivo descargable" class="img_png" onclick="return salir()">Moda, Comunicación y Poder: ¿Qué vestimos, por qué
+                    y qué queremos decir con eso?</a>
             </div>
         </aside>
-              
+        </div>
 <!----------------------FOOTER---------------------->
-        <footer class="footer">
-            <div class="redes">
-                <a href="https://www.facebook.com" class="icon-facebook"></a>
-            <a href="https://www.instagram.com" class="icon-instagram"></a>
-            <a href="https://twitter.com" class="icon-twitter"></a>
+        <footer class="footer">  
+            <figure><img src="./imagenes/Logos/Logo_interrogante.png" alt="logo" class="logotipo_footer"></figure>
+            <p class="p_footer">Contenido creado por Karina Casas para revolución digital<br> Entrega final <br> &copy; 2022 ViTrinas</p>  
             </div>
-            <p class="p_footer">Contenido creado por Karina Casas para revolución digital, entrega final</p>
         </footer>
     </div>
   <script src="./js/script.js"></script>

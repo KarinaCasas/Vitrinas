@@ -28,6 +28,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
+    <!--Fuente Rajdhani-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
     <body>
 
@@ -65,113 +69,192 @@
             </div>
         </nav>
 <div class="container">
-<div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp"></a></div>
-
+<!----------------REDES----------------->
+<div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp" onclick="return salir()"></a>
+    <a href="https://www.facebook.com" class="icon-facebook" onclick="return salir()"></a>
+    <a href="https://www.instagram.com" class="icon-instagram" onclick="return salir()"></a>
+    <a href="https://twitter.com" class="icon-twitter" onclick="return salir()"></a>
+</div>
+<!-------Desplazador hacia arriba------------>
+<div class="icono">
+    <icon class="icon-arriba"></icon>
+</div>
 <!---------------ESTILOS - CONTENIDO------------------->
 <main class="estilos">
-    <figure class="tech">
-        <a href="#" class="a_estilos"><h3 class="h3">techwear</h3>
-        <img src="../imagenes/techwear/estilos_tech.jpg" alt="techwear" class="img_estilos"></a>
-        <p class="p_estilos">El 'teachwear' es una moda que se caracteriza por combinar la comodidad, la tecnología en textiles y el diseño futurista
-        para crear prendas funcionales para la vida diaria pero con un toque dramático y apocalíptico. La ropa esta hecha de
+    <figure class="tech" id="tech">
+        <a href="#tech" class="a_estilos"><h3 class="h3">techwear</h3>
+        </a>
+        <img src="../imagenes/techwear/estilos_tech.jpg" alt="techwear" class="img_estilos">
+        <p class="p_estilos">El futuro está alcanzando a la moda y el Techwear es la evidencia máxima de ello. Esta manera de vestir -que la mejor
+        forma de describirla es como vanguardista- nace en las calles de Japón, las cuales siempre se han caracterizado, no por
+        seguir tendencias, más bien por crearlas.<br> El 'teachwear' es una moda que se caracteriza por combinar la comodidad, la tecnología en textiles y el diseño futurista
+        para crear prendas funcionales para la vida diaria pero con un toque dramático y apocalíptico.<br>
+        <h3 class="h3_texto">La ropa esta hecha de
         textiles ligeros pero resistentes que le brindan protección al cuerpo, es a prueba de agua y con cierta durabilidad. Los
-        arneses, bolsillos, broches y cierres son el detalle final.</p>
+        arneses, bolsillos, broches y cierres son el detalle final.</h3></p>
+        <img src="../imagenes/techwear/tech_mujer.jpg" alt="techwear" class="img_estilos_izq"></a>
+        <img src="../imagenes/techwear/Techwear_grupo.jpg" alt="techwear" class="img_estilos_large"></a>
+        <p class="p_estilos"> El principal diferenciador de estas prendas son los materiales que se ocupan para su desarrollo. Muchas de las marcas le
+            dan una gran importancia a la selección de sus materias primas, en este caso los textiles, los cuales deben cumplir
+            con ciertas características como lo son: Durabilidad, ligereza, resistencia al agua, entre otras que se adapten al fin
+            de la
+            tendencia: ser multifuncional. <br> De igual manera se le pone gran atención al uso de elementos utilitarios ya vistos en
+            otras prendas, en este tipo de indumentaria: Cierres, ganchos, ojillos metálicos, broches o cintas.
+        </p>
     </figure>
-    <figure class="soft">
-        <a href="#" class="a_estilos"><h3 class="h3">soft girl</h3>
-        <img src="../imagenes/Soft_girl/estilos_soft.jpg" alt="Soft girl" class="img_estilos"></a>
-        <p class="p_estilos">La soft girl es una chica sensible, dulce y hasta cierto punto infantil. Por lo regular, esta tendencia es adoptada por
-        veinteañeras.</p>
-        <p class="p_estilos">Según los expertos en moda, si quieres ser una verdadera soft girl es importantísimo que ames el iluminador. Acuérdate
-        cómo dice la canción ‘estoy brillando con highlighter’.
-        Su estilo es muy soñador, mezcla cosas de infancia como overoles y coletas con maquillaje y otros estilos más adultos.
+    <figure class="soft" id="soft">
+        <a href="#soft" class="a_estilos"><h3 class="h3">soft girl</h3>
+        </a><img src="../imagenes/Soft_girl/estilos_soft.jpg" alt="Soft girl" class="img_estilos">
+        <p class="p_estilos">Soft girl quiere decir chica suave.<br>
+        UrbanDictionary la define así: "una soft girl es alguien que ama los clips y las bandas en el cabello, los collares
+        bonitos y los duraznos. Maquillaje -aman usar rubor (usualmente rosa o color durazno). Son adictas al gloss y aman
+        pintar corazones y nubes en sus mejillas. El iluminador es importante si quieres ser una soft girl (usualmente blanco,
+        rosa o durazno)".<br>
+        Otras definiciones aseguran que les encanta usar ropa femenina, en colores pastel, usar tenis con faldas y vestidos, y
+        por supuesto, aman Instagram y TikTok.</p>
+        <img src="../imagenes/Soft_girl/soft1.jpg" alt="softgirl" class="img_estilos_izq"></a>
+        <h3 class="h3_texto"><br><br><br>Según los expertos en moda, si quieres ser una verdadera soft girl es importantísimo que ames el iluminador. Acuérdate
+        cómo dice la canción ‘estoy brillando con highlighter’.</h3><br>
+        <img src="../imagenes/Soft_girl/soft2.jpg" alt="softgirl" class="img_estilos_large_float"></a>
+        <p class="p_estilos"><br><br><br><br>Su estilo es muy soñador, mezcla cosas de infancia como overoles y coletas con maquillaje y otros estilos más adultos.
         Además, están acostumbradas a combinar sus atuendos con tenis, de preferencia, de colores claros.</p>
+        
     </figure>
-    <figure class="clasico">
-        <a href="#" class="a_estilos"><h3 class="h3">clasico casual</h3>
-        <img src="../imagenes/clasico/estilos_clasico.jpg" alt="clasico" class="img_estilos"></a>
+    <figure class="clasico" id="clasicos">
+        <a href="#clasicos" class="a_estilos"><h3 class="h3">clasico casual</h3>
+        </a><img src="../imagenes/clasico/estilos_clasico.jpg" alt="clasico" class="img_estilos">
         <p class="p_estilos">La presencia de ropa elegante y de alta calidad es lo que más caracteriza al estilo clásico.
         Los pantalones rectos también son muy recurrentes, al igual que la creación de siluetas equilibradas a través de la
         combinación de prendas.</p>
-        
+        <img src="../imagenes/clasico/clasicoportada2-680x380.jpg" alt="clasico" class="img_estilos_izq"><br><br><br><br><br><br><br>
+        <h3 class="h3_texto">El estilo clásico no es:</h3>
+        <ul class="ul_estilos">
+            <li>Llevar volantes y adornos muy exagerados.</li>
+            <li>Vestir colores llamativos.</li>
+            <li>Abusar de los maxi estampados.</li>
+        </ul>
+        <img src="../imagenes/clasico/clasico1.jpg" alt="clasico" class="img_estilos_large_float"></a>
         <p class="p_estilos">El estilo clásico transmite romanticismo y sofisticación mediante unos conjuntos donde prevalecen los colores neutros
-        como el negro, el blanco, el gris o el beige.
-        
-        Los looks clásicos proyectan una gran madurez y seguridad, por eso, muchas personas no le dan una oportunidad a este
+        como el negro, el blanco, el gris o el beige.<br>
+        <h3 class="h3_texto">El estilo clásico es:</h3>
+        <ul class="ul_estilos">
+            <li>Vestir prendas de calidad.</li>
+            <li>Darle presencia de colores neutros y armoniosos.</li>
+            <li>Elegir prendas rectas para generar cortes rectos.</li>
+        </ul>
+        </p>
+        <p class="p_estilos">Los looks clásicos proyectan una gran madurez y seguridad, por eso, muchas personas no le dan una oportunidad a este
         estilo al considerarlo un tanto aburrido. Pero nada más lejos de la realidad. El estilo clásico no es sinónimo de
         antiguo, todo lo contrario, y en este artículo te lo vamos a demostrar.</p>
+        
+</p>
     </figure>
-    <figure class="academia">
-        <a href="#" class="a_estilos"><h3 class="h3">academia o preppy</h3>
-        <img src="../imagenes/preppy/estilos_preppy.jpg" alt="Academia" class="img_estilos"></a>
-        <p class="p_estilos">El estilo preppy es característico por sus siluetas estructuradas, colores pastel, prendas básicas, estampados de
+    <figure class="academia" id="academia">
+        <a href="#academia" class="a_estilos"><h3 class="h3">academia o preppy</h3>
+        </a>
+        <img src="../imagenes/preppy/estilos_preppy.jpg" alt="Academia" class="img_estilos">
+        <p class="p_estilos">El estilo preppy o academia es característico por sus siluetas estructuradas, colores pastel, prendas básicas, estampados de
         cuadros y bordados.
         La palabra preppy proviene de las universidades más influyentes de la costa este Estadounidense. La mayoría de los
         jóvenes de clase alta americana, antes de ingresar en las prestigiosas universidades del Ivy League, acudían a unos
         cursos previos llamados: preparatory courses.</p>
-        <p class="p_estilos">Estos jóvenes fueron los creadores de este estilo, queriendo alejarse del estilo clásico de sus padres y dándole a giro
-        a sus uniformes de colegio. Un estilo que dio un giro atrevido y divertido que a día de hoy ¡nos sigue encantando!
+        <img src="../imagenes/preppy/preppy1.jpg" alt="preppy" class="img_estilos_izq"></a>
+        
+        <h3 class="h3_texto">Estos jóvenes fueron los creadores de este estilo, queriendo alejarse del estilo clásico de sus padres y dándole a giro
+        a sus uniformes de colegio. Un estilo que dio un giro atrevido y divertido que a día de hoy.</h3>
+        <img src="../imagenes/preppy/preppy2.jpg" alt="preppy" class="img_estilos_large_float2"></a><br><br>
+        
+        <p class="p_estilos">Origen del estilo preppy: Preparatory Schools (EE. UU.)
+        
+        En los años veinte, las mejores escuelas del país formaban a los hijos de las familias adineradas. Estas instituciones
+        se inspiraban en los códigos de vestimenta de la tradición inglesa e incorporaban uniformes con escudos y colores
+        concretos. Después de la escuela y la universidad, los antiguos alumnos seguían vistiendo ropa estilo preppy.<br>
+        
+        En los cincuenta, el estilo preppy en la moda define el estilo de vida americano y es sinónimo de éxito. Entonces,
+        surgieron marcas como Brooks Brothers, Ralph Lauren y Tommy Hilfiger. Poco a poco, se convirtió en una tendencia
+        mundial.
         </p>
     </figure>
-    <figure class="rock">
-        <a href="#" class="a_estilos"><h3 class="h3">rock</h3>
+    <figure class="rock" id="rock">
+        <a href="#rock" class="a_estilos"><h3 class="h3">rock</h3>
         <img src="../imagenes/rock/estilos_rock.jpg" alt="Estilo rock" class="img_estilos"></a>
         <p class="p_estilos">La moda se ve influida siempre por la vida, el arte y la música. El rock ha traspasado el nivel de fenómeno musical para
         convertirse en actitud y fenómeno estilístico.
-        
-        El estilo rockero rompe por completo con la estética clásica y combina prendas atrevidas y urbanas como pantalones
-        pitillo, prendas de cuero, tachuelas, lentejuelas, botas militares, sombreros trendy, gafas de aviador, etc. Firmas como
-        Balmain, abanderan esta tendencia.</p>
+        Sin duda, dentro de la estética del rock, nuestra mayor referente es la modelo británica Kate Moss. Todos sus looks
+        representan un estilo relajado pero con un punto chic que la han convertido en icono de moda. En su día a día, es
+        habitual verla con bikers, abrigos animal print, skinny jeans negros, sombrero y maxi gafas.
+        <br><br>
+        </p>
+        <img src="../imagenes/rock/rock3.jpg" alt="rock" class="img_estilos_izq"></a><br><br><br>
+        <h3 class="h3_texto">El estilo rockero rompe por completo con la estética clásica y combina prendas atrevidas y urbanas como pantalones
+        pitillo, prendas de cuero, tachuelas, lentejuelas, botas militares, sombreros trendy, gafas de aviador, etc.</h3>
+        <img src="../imagenes/rock/rock2.jpg" alt="rock" class="img_estilos_large_float"></a>
+        <p class="p_estilos"><br><br><br><br><br>
+            El rock nació en los años 50 en Estados Unidos. Alude a un estilo de música concreto, con Elvis Presley como icono.
+            Elvis convirtió el rock en tendencia llegando a cambiar el vestuario de la época y poniendo de moda el estilo rockero.<br>
+            Pantalones acampanados, bikers y camisas ajustadas aterrizaron en la pista y en el street style (casi) a partes iguales.
+        </p>
     </figure>
-    <figure class="sporty">
-        <a href="#" class="a_estilos"><h3 class="h3">Sporty chic</h3>
+    <figure class="sporty" id="sporty">
+        <a href="#sporty" class="a_estilos"><h3 class="h3">Sporty chic</h3>
         <img src="../imagenes/sporty/estilos_sporty.jpg" alt="Sporty" class="img_estilos"></a>
+        
         <p class="p_estilos">El sporty chic, tiene como significado en español “deportivo” y “elegante”, es una tendencia que combina las prendas
         deportivas con un toque de glamour. Con esta moda no tienes que dejar a un lado la comodidad para lucir elegante y con
-        lo más cool del momento.
-        
-        Es el estilo más utilizado por las mujeres hoy en día, incluso por los hombres, es conocido popularmente como “arreglado
+        lo más cool del momento.</p>
+        <h3 class="h3_texto">Es importante conocer algunas claves sobre cómo vestir un look de sport elegante. En ocasiones,
+            muchas personas
+            confunden esta tendencia, es esencial no confundir lo informal con lo descuidado. Esta moda es lo mejor de los dos
+            mundos: la elegancia y la comodidad.</h3>
+        <img src="../imagenes/sporty/sporty1.jpg" alt="rock" class="img_estilos_izq"></a><br><br><br>
+        <p class="p_estilos">Es el estilo más utilizado por las mujeres hoy en día, incluso por los hombres, es conocido popularmente como “arreglado
         pero informal”. Los Sporty Outfits son la mezcla perfecta entre las prendas formales y las informales. Ahí está la
         clave, en el equilibrio entre ambas.
         
         Esta moda consiste en incorporar elementos o accesorios deportivos a un look habitual, priorizar la comodidad mientras
         luces espectacular. Desde añadir unos tenis a un vestido hasta un pantalón de chándal con unos tacones.</p>
+        
+        <img src="../imagenes/sporty/sporty4.jpg" alt="rock" class="img_estilos_large_float"></a>
+        <p class="p_estilos"><br><br><br><br>
+            Antes de conocer las claves para vestir esta moda es importante conocer las reglas básicas que no pueden faltar para
+            llevarlo con mucho estilo.</p>
+            <p class="p_estilos">Una prenda deportiva por look. La prenda deportiva pretende conseguir un toque desenfadado con cualquier outfit, la base
+            es que el resto del conjunto sea el protagonista. No tengas miedo a utilizar prendas demasiado formales. Puedes utilizar todo tipo de prendas formales, desde blazers,
+            vestidos o incluso trajes de pantalón.
+            </p>
+            <img src="../imagenes/sporty/sporty3.jpg" alt="rock" class="img_estilos_izq"></a><br><br>
+            <h3 class="h3_texto"> En esta tendencia, nada es demasiado formal. Apuesta por los accesorios y complementos. Los accesorios pueden ser el broche final perfecto para cualquier look, desde
+            una gorra, mochila o un collar elegante con una camiseta deportiva.
+        </h3>
+        
     </figure>
 </main>
 <!----------------------ASIDE------------------------>
+<div class="posision_2">
 <aside class="aside2">
+    <h3 class="h3_descargables">descargables</h3>
     <div class="div_aside">
-        <a href="https://www.parati.com.ar/categoria/moda/" class="a_aside">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/E1266601_%285398889640%29.jpg" alt="Moda"
-                class="img_aside">
-            Últimas novedades sobre moda</a>
+        <a href="../descargables/Modos de vestir e identidades de género.pdf" download="descargables/Modos de vestir e identidades de género.pdf" class="a_aside" onclick="return salir()"><img src="../imagenes/Logos/png.png" alt="archivo descargable"
+            class="img_png">Modos de vestir e identidades de género.</a>
     </div>
     <div class="div_aside">
-        <a href="https://www.clara.es/moda/looks/estilos-vestir_12818" class="a_aside">
-            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/24/16640115248905.jpg"
-                alt="desfile" class="img_aside">
-            10 estilos de vestir: ¡encuentra el tuyo!</a>
-    </div>
-
-    <div class="div_aside">
-        <a href="https://seruncaballero.com/estilos-de-vestir-hombre/" class="a_aside">
-            <img src="https://media.revistagq.com/photos/61e690ac671b6de977880738/1:1/w_1600%2Cc_limit/GettyImages-1365032685.jpg"
-                alt="Hombre caminando" class="img_aside">
-            Guía completa para ser un experto en estilos de vestir/ropa de hombre</a>
+        <a href="../descargables/moda.pdf"
+            download="moda.pdf" class="a_aside" onclick="return salir()"><img
+                src="../imagenes/Logos/png.png" alt="archivo descargable" class="img_png">Moda, Comunicación y Poder: ¿Qué vestimos, por qué
+                y qué queremos decir con eso?</a>
     </div>
 </aside>
+</div>
 <!-----------------------------------FOOTER----------------------------------->
 <footer class="footer">
-    <div class="redes">
-        <a href="https://www.facebook.com" class="icon-facebook"></a>
-        <a href="https://www.instagram.com" class="icon-instagram"></a>
-        <a href="https://twitter.com" class="icon-twitter"></a>
+    <figure><img src="../imagenes/Logos/Logo_interrogante.png" alt="logo" class="logotipo_footer"></figure>
+    <p class="p_footer">Contenido creado por Karina Casas para revolución digital<br> Entrega final <br> &copy; 2022
+        ViTrinas</p>
     </div>
-    <p class="p_footer">Contenido creado por Karina Casas para revolución digital, entrega final</p>
 </footer>
 </div>
 <!--------------LINK A JS----------------->
-<script src="./js/script.js"></script>
+<script src="../js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>

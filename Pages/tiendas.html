@@ -28,6 +28,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
+    <!--Fuente Rajdhani-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +41,7 @@
         <h1 class="h1">ViTrinas</h1>
 
     </header>
-    <!-----------------------NAVEGADOR----------------------->
+<!-----------------------NAVEGADOR----------------------->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-color mt-3 mb-1">
         <div class="container-fluid conteiner-color">
@@ -66,14 +70,25 @@
         </div>
     </nav>
     <div class="container">
-        <div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp"></a></div>
-          <!--TIENDAS CONTENIDO-->
-            <h3 class="h3_tiendas">San Nicolás de los Arroyos</h3>
-            <iframe
+<!----------------REDES----------------->
+    <div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp" onclick="return salir()"></a>
+        <a href="https://www.facebook.com" class="icon-facebook" onclick="return salir()"></a>
+        <a href="https://www.instagram.com" class="icon-instagram" onclick="return salir()"></a>
+        <a href="https://twitter.com" class="icon-twitter" onclick="return salir()"></a>
+    </div>
+<!-------Desplazador hacia arriba------------>
+<div class="icono">
+    <icon class="icon-arriba"></icon>
+</div>
+<!------------------ZONA TIENDAS------------------->
+<h3 class="h3_tiendas"> Tiendas de <br> San Nicolás de los Arroyos </h3>
+<iframe
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d18856.773657524023!2d-60.22712348995642!3d-33.33350176918028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stiendas%20san%20nicolas%20de%20los%20arroyos!5e0!3m2!1ses-419!2sar!4v1664254565645!5m2!1ses-419!2sar"
                 width="150" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-        <div class="tiendas">
+
+<!-------------------CONTENIDO----------------->
+        <main class="tiendas">
         <figure class="figure contenedor_tiendas">
             <a href="https://www.instagram.com/alfisjeansnacion/"><img src="../imagenes/Logos/tiendas/alfijeans.png" class="figure-img img-fluid rounded img_tiendas" alt="alfis jeans"></a>
             <figcaption class="figure-caption texto_tiendas">Alfis Jeans <br> Nacion 241<br>
@@ -154,41 +169,35 @@
             <figcaption class="figure-caption texto_tiendas">Insolinas <br> Nación 262
         </figure> 
         
-</div>
+        </main>
  <!----------------------ASIDE------------------------>
-        <aside class="aside2">
-            <div class="div_aside">
-                <a href="https://www.parati.com.ar/categoria/moda/" class="a_aside">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/E1266601_%285398889640%29.jpg" alt="Moda"
-                        class="img_aside">
-                    Últimas novedades sobre moda</a>
-            </div>
-            <div class="div_aside">
-                <a href="https://www.clara.es/moda/looks/estilos-vestir_12818" class="a_aside">
-                    <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/24/16640115248905.jpg"
-                        alt="desfile" class="img_aside">
-                    10 estilos de vestir: ¡encuentra el tuyo!</a>
-            </div>
-        
-            <div class="div_aside">
-                <a href="https://seruncaballero.com/estilos-de-vestir-hombre/" class="a_aside">
-                    <img src="https://media.revistagq.com/photos/61e690ac671b6de977880738/1:1/w_1600%2Cc_limit/GettyImages-1365032685.jpg"
-                        alt="Hombre caminando" class="img_aside">
-                    Guía completa para ser un experto en estilos de vestir/ropa de hombre</a>
-            </div>
-        </aside>
-        <!-----------------------------------FOOTER----------------------------------->
-        <footer class="footer">
-            <div class="redes">
-                <a href="https://www.facebook.com" class="icon-facebook"></a>
-                <a href="https://www.instagram.com" class="icon-instagram"></a>
-                <a href="https://twitter.com" class="icon-twitter"></a>
-            </div>
-            <p class="p_footer">Contenido creado por Karina Casas para revolución digital, entrega final</p>
-        </footer>
+        <!----------------------ASIDE------------------------>
+        <div class="posision_2">
+            <aside class="aside2">
+                <h3 class="h3_descargables">descargables</h3>
+                <div class="div_aside">
+                    <a href="../descargables/Modos de vestir e identidades de género.pdf"
+                        download="descargables/Modos de vestir e identidades de género.pdf" class="a_aside" onclick="return salir()"><img
+                            src="../imagenes/Logos/png.png" alt="archivo descargable" class="img_png">Modos de vestir e
+                        identidades de género</a>
+                </div>
+                <div class="div_aside">
+                    <a href="../descargables/moda.pdf" download="moda.pdf" class="a_aside" onclick="return salir()"><img src="../imagenes/Logos/png.png"
+                            alt="archivo descargable" class="img_png">Moda, Comunicación y Poder: ¿Qué vestimos, por qué
+                        y qué queremos decir con eso?</a>
+                </div>
+            </aside>
         </div>
-        <!--------------LINK A JS----------------->
-        <script src="./js/script.js"></script>
+<!-----------------------------------FOOTER----------------------------------->
+<footer class="footer">
+    <figure><img src="../imagenes/Logos/Logo_interrogante.png" alt="logo" class="logotipo_footer"></figure>
+    <p class="p_footer">Contenido creado por Karina Casas para revolución digital<br> Entrega final <br> &copy; 2022
+        ViTrinas</p>
+    </div>
+</footer>
+        </div>
+<!--------------LINK A JS----------------->
+        <script src="../js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>

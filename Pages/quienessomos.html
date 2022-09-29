@@ -27,6 +27,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
+    <!--Fuente Rajdhani-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,11 +70,22 @@
     </nav>
 <!----------------CONTENEDOR------------->
     <div class="container">
-        <div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp"></a></div>
+<!----------------REDES----------------->
+<div class="wa_we"><a href="http://wa.me/5493364030249?text=Necesito%20información" class="icon-whatsapp" onclick="return salir()"></a>
+    <a href="https://www.facebook.com" class="icon-facebook" onclick="return salir()"></a>
+    <a href="https://www.instagram.com" class="icon-instagram" onclick="return salir()"></a>
+    <a href="https://twitter.com" class="icon-twitter" onclick="return salir()"></a>
+</div>
+<!-------Desplazador hacia arriba------------>
+        <div class="icono">
+            <icon class="icon-arriba"></icon>
+        </div>
+<!-----------------ORGANIZACION---------------->
     <div class="org"><img src="../imagenes/Organizacion/imagen_karina.jpg" alt="Karina Casas" class="img_org">
         <h3 class="h3_org">Karina casas
         <p class="p_org">Colombiana radicada en San Nicolás de los Arroyos. <br> CEO en ViTrinas desde 2022.</p></h3>
     </div>
+
 <!-------------CCONTENIDO---------------->
         <main class="contenido">
             <h2 class="titulos_pag">Quiénes somos</h2>
@@ -85,43 +100,55 @@
                 
                 <p class="parrafos">Vitrinas maneja una gran variedad de prendas, por lo que los usuarios pueden disfrutar de una amplia gama de diseños
                 creados por las tiendas asociadas, también asocia diariamente marcas creadas por personas emprendedoras, ayudándolas con
-                publicidad positiva para sus negocios.</p>
-                
+                publicidad positiva para sus negocios.</p>   
+
+                <table class="tabla">
+                    <tr class="tr">
+                        <td class="td">
+                            <img src="../imagenes/Organizacion/karina_casas.jpg" alt="" class="img_tabla">
+                            <h3 class="h3_tabla">Karina Casas</h3>
+                        </td>
+                        <td class="td">
+                            <img src="../imagenes/Organizacion/liliana_correa.jpg" alt="" class="img_tabla">
+                            <h3 class="h3_tabla">liliana correa</h3>
+                        </td>
+                        <td class="td">
+                            <img src="../imagenes/Organizacion/agustin_coronel.jpg" alt="" class="img_tabla">
+                            <h3 class="h3_tabla">Agustin Coronel</h3>
+                        </td>
+                    </tr>
+                </table>
         </main>
+
+
 <!-------------------ASIDE--------------------->
-        <aside class="aside2">
-            <div class="div_aside">
-                <a href="https://www.parati.com.ar/categoria/moda/"class="a_aside">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/E1266601_%285398889640%29.jpg" alt="Moda"
-                        class="img_aside">
-                    Últimas novedades sobre moda</a>
-            </div>
-            <div class="div_aside">
-                <a href="https://www.clara.es/moda/looks/estilos-vestir_12818"class="a_aside">
-                    <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/24/16640115248905.jpg"
-                        alt="desfile" class="img_aside">
-                    10 estilos de vestir: ¡encuentra el tuyo!</a>
-            </div>
-        
-            <div class="div_aside">
-                <a href="https://seruncaballero.com/estilos-de-vestir-hombre/"class="a_aside">
-                    <img src="https://media.revistagq.com/photos/61e690ac671b6de977880738/1:1/w_1600%2Cc_limit/GettyImages-1365032685.jpg"
-                        alt="Hombre caminando" class="img_aside">
-                    Guía completa para ser un experto en estilos de vestir/ropa de hombre</a>
-            </div>
-        </aside>
+<div class="posision_2">
+    <aside class="aside2">
+        <h3 class="h3_descargables">descargables</h3>
+        <div class="div_aside">
+            <a href="../descargables/Modos de vestir e identidades de género.pdf"
+                download="descargables/Modos de vestir e identidades de género.pdf" class="a_aside" onclick="return salir()"><img
+                    src="../imagenes/Logos/png.png" alt="archivo descargable" class="img_png">Modos de vestir e
+                identidades de género</a>
+        </div>
+        <div class="div_aside">
+            <a href="../descargables/moda.pdf" download="moda.pdf" class="a_aside" onclick="return salir()"><img src="../imagenes/Logos/png.png"
+                    alt="archivo descargable" class="img_png">Moda, Comunicación y Poder: ¿Qué vestimos, por qué
+                y qué queremos decir con eso?</a>
+        </div>
+        <p></p>
+    </aside>
+</div>
 
 <!-----------------------------FOOTER-------------------------->
-    <footer class="footer">
-        <div class="redes">
-            <a href="https://www.facebook.com" class="icon-facebook"></a>
-            <a href="https://www.instagram.com" class="icon-instagram"></a>
-            <a href="https://twitter.com" class="icon-twitter"></a>
+        <footer class="footer">
+            <figure><img src="../imagenes/Logos/Logo_interrogante.png" alt="logo" class="logotipo_footer"></figure>
+            <p class="p_footer">Contenido creado por Karina Casas para revolución digital<br> Entrega final <br> &copy; 2022
+                ViTrinas</p>
+            </div>
+        </footer>
         </div>
-        <p class="p_footer">Contenido creado por Karina Casas para revolución digital, entrega final</p>
-    </footer>
-        </div>
-        <script src="./js/script.js"></script>
+        <script src="../js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>
